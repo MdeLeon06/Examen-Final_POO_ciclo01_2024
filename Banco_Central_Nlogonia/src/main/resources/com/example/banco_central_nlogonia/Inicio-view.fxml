@@ -1,16 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.banco_central_nlogonia.InicioController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b76bc" height="542.0" stroke="BLACK" strokeType="INSIDE" width="448.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="522.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="429.0" />
+      <Label layoutX="47.0" layoutY="49.0" text="Bienvenido">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblNombre_Usuario" layoutX="142.0" layoutY="49.0" prefHeight="27.0" prefWidth="277.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="60.0" layoutY="159.0" mnemonicParsing="false" text="Trasaccion">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="56.0" layoutY="212.0" mnemonicParsing="false" text="Agregar Tarjeta">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="59.0" layoutY="271.0" mnemonicParsing="false" text="Busquedas de compras realizadas">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="60.0" layoutY="333.0" mnemonicParsing="false" text="Gastos realizados por mes">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="59.0" layoutY="393.0" mnemonicParsing="false" text="Tarjetas Asociadas">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="60.0" layoutY="455.0" mnemonicParsing="false" text="Historial de compras hechas por las tarjetas">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Label layoutX="47.0" layoutY="76.0" text="Que Desea Realizar.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
