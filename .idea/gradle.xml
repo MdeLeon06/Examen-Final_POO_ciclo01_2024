@@ -4,7 +4,10 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/Banco_Central_Nlogonia" />
+
         <option name="gradleJvm" value="21" />
+        <option name="gradleJvm" value="corretto-17" />
+
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Banco_Central_Nlogonia" />
