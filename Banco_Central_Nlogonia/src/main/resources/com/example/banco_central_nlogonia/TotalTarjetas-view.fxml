@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
@@ -51,3 +50,4 @@
       <Label fx:id="MensajeError_TT" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="460.0" textFill="#ae2323" />
    </children>
 </VBox>
+

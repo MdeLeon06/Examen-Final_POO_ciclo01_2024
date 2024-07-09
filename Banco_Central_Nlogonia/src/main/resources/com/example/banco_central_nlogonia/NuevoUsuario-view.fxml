@@ -1,16 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.banco_central_nlogonia.NuevoUsuarioController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.NuevoUsuarioController">
+   <children>
+      <Label fx:id="lblCreacionUsuario" layoutX="159.0" layoutY="33.0" text="Creación de nuevo usuario">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNombreCompleto" layoutX="48.0" layoutY="103.0" text="Nombre Completo:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTelefono" layoutX="48.0" layoutY="137.0" text="Teléfono:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDireccion" layoutX="48.0" layoutY="169.0" text="Dirrección:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUsuarioN" layoutX="48.0" layoutY="207.0" text="Usuario:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblContrasenaN" layoutX="52.0" layoutY="240.0" text="Contraseña:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAgregarUsuario" layoutX="273.0" layoutY="292.0" mnemonicParsing="false" onAction="#DatosNuevos" text="Agregar">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSiguiente" layoutX="504.0" layoutY="352.0" mnemonicParsing="false" onAction="#PantallaTarjeta" text="Siguiente">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtFNombreCompleto" layoutX="199.0" layoutY="103.0" prefHeight="25.0" prefWidth="363.0" />
+      <TextField fx:id="txtFTelefono" layoutX="124.0" layoutY="137.0" />
+      <TextField fx:id="txtFDireccion" layoutX="136.0" layoutY="169.0" prefHeight="25.0" prefWidth="427.0" />
+      <TextField fx:id="txtFUsuarioN" layoutX="116.0" layoutY="207.0" />
+      <TextField fx:id="txtFContrasenaN" layoutX="151.0" layoutY="240.0" />
+      <Label fx:id="lblError" layoutX="52.0" layoutY="344.0" prefHeight="17.0" prefWidth="427.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
