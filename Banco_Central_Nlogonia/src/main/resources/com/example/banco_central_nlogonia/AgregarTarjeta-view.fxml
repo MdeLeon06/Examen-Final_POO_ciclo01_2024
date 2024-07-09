@@ -1,16 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.banco_central_nlogonia.AgregarTarjetaController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="449.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b76bc" height="542.0" stroke="BLACK" strokeType="INSIDE" width="449.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="522.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="429.0" />
+      <Label contentDisplay="CENTER" layoutX="19.0" layoutY="-8.0" prefHeight="108.0" prefWidth="411.0" text="Bienvenido al sistema de agregacion de tarjetas. Ingrese los datos necesarios" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="115.0" text="Numero de tarjeta:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="170.0" layoutY="115.0" prefHeight="25.0" prefWidth="204.0" />
+      <Label layoutX="37.0" layoutY="154.0" text="Tipo de tarjeta">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="150.0" layoutY="154.0" prefWidth="150.0" />
+      <Label layoutX="37.0" layoutY="202.0" text="Facilitador">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="122.0" layoutY="202.0" prefWidth="150.0" />
+      <DatePicker layoutX="184.0" layoutY="259.0" prefHeight="25.0" prefWidth="204.0" />
+      <Label layoutX="33.0" layoutY="259.0" text="Fecha de expiracion">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="63.0" layoutY="451.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="80.0" text="Cancelar" />
+      <Button layoutX="286.0" layoutY="451.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="103.0" text="Agregar" />
+      <ImageView fitHeight="245.0" fitWidth="335.0" layoutX="57.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../esp-grandes-superficies-tarjetas-credito-640x280-16032014.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

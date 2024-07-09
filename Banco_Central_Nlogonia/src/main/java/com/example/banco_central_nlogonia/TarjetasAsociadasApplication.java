@@ -7,12 +7,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class LoginApplication extends Application {
+public class TarjetasAsociadasApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(LoginApplication.class.getResource("Login-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 370);
-        stage.setTitle("   Login  ");
+        FXMLLoader fxmlLoader = new FXMLLoader(NuevoUsuarioApplication.class.getResource("TarjetasAsociadas-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        stage.setTitle("   Creacion de nuevo usuario  ");
         stage.setScene(scene);
         stage.show();
     }
