@@ -9,7 +9,6 @@ public class Transaccion {
     private String descripcion;
     private String fecha;
     private Tarjeta tarjeta;
-
     public Transaccion(int codigo, float monto, String descripcion, Tarjeta tarjeta, String fecha) {
         this.codigo = codigo;
         this.Monto = monto;

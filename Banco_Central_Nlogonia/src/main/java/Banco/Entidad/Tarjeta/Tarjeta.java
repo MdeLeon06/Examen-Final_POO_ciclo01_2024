@@ -37,7 +37,7 @@ public class Tarjeta {
     }
 
     public void setId_Facilitador(int id_Facilitador) {
-        this.Id_Facilitador = id_Facilitador;
+        Id_Facilitador = id_Facilitador;
     }
 
     public int getId_Cliente() {
@@ -45,7 +45,7 @@ public class Tarjeta {
     }
 
     public void setId_Cliente(int id_Cliente) {
-        this.Id_Cliente = id_Cliente;
+        Id_Cliente = id_Cliente;
     }
 
     public String getFechExpiarion() {
@@ -53,7 +53,7 @@ public class Tarjeta {
     }
 
     public void setFechExpiarion(String fechExpiarion) {
-        this.FechExpiarion = fechExpiarion;
+        FechExpiarion = fechExpiarion;
     }
 
     public String getTarjeta() {
@@ -61,7 +61,7 @@ public class Tarjeta {
     }
 
     public void setTarjeta(String tarjeta) {
-        this.Tarjeta = tarjeta;
+        Tarjeta = tarjeta;
     }
 
     public String getFacilitador() {
@@ -69,7 +69,7 @@ public class Tarjeta {
     }
 
     public void setFacilitador(String facilitador) {
-        this.Facilitador = facilitador;
+        Facilitador = facilitador;
     }
 
     public String getTipoTarjeta() {
@@ -77,7 +77,7 @@ public class Tarjeta {
     }
 
     public void setTipoTarjeta(String tipoTarjeta) {
-        this.TipoTarjeta = tipoTarjeta;
+        TipoTarjeta = tipoTarjeta;
     }
 
     public Cliente getCliente() {
