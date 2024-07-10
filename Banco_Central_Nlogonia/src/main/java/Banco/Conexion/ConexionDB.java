@@ -7,9 +7,9 @@ import java.util.ResourceBundle;
 
 public class ConexionDB {
     private Connection con;
-    private String Url = "jdbc:mysql://localhost:3306/parcial_final" ;
+    private String Url = "jdbc:mysql://localhost:3306/Parcial_Final" ;
     private String User = "root";
-    private String Password = "22102003";
+    private String Password = "Contrasena05";
 
     public Connection conectarDB() {
         try{

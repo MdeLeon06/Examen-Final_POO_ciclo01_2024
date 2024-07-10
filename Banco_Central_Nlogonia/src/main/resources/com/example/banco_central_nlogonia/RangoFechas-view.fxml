@@ -1,10 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>  <!-- 00126123   Especifica la versión y codificación del archivo FXML -->
-<?import javafx.geometry.*?>  <!-- 00126123   Importación de clases de geometría de JavaFX -->
-<?import javafx.scene.control.*?>   <!-- 00126123   Importación de clases de control de JavaFX -->
-<?import javafx.scene.effect.*?>  <!-- 00126123   Importación de clases de efectos de JavaFX -->
-<?import javafx.scene.layout.*?>  <!-- 00126123   Importación de clases de diseño de JavaFX -->
-<?import javafx.scene.paint.*?>  <!-- 00126123   Importación de clases de pintura de JavaFX -->
-<?import javafx.scene.text.*?>  <!-- 00126123   Importación de clases de texto de JavaFX -->
+<?xml version="1.0" encoding="UTF-8"?> <!-- 00126123   Especifica la versión y codificación del archivo FXML -->
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<!-- 00126123   Importación de clases de geometría de JavaFX -->
+<!-- 00126123   Importación de clases de control de JavaFX -->
+<!-- 00126123   Importación de clases de efectos de JavaFX -->
+<!-- 00126123   Importación de clases de diseño de JavaFX -->
+<!-- 00126123   Importación de clases de pintura de JavaFX -->
+<!-- 00126123   Importación de clases de texto de JavaFX -->
 
 <VBox alignment="CENTER" prefHeight="650.0" prefWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.RangoFechasController">  <!-- 00126123  VBOX con las propiedades y el controlador de la pantalla -->
     <padding>
@@ -40,7 +47,7 @@
             </Button>
          </children>
       </Pane>
-      <TableView prefHeight="215.0" prefWidth="460.0"> <!-- 00126123 Medidas de la tabla para mostrar la informacion del resultado de busqueda -->
+      <TableView fx:id="tbl_BusquedaFechas_RF" prefHeight="215.0" prefWidth="460.0"> <!-- 00126123 Medidas de la tabla para mostrar la informacion del resultado de busqueda -->
         <columns>
           <TableColumn fx:id="ColDescripcion_RF" prefWidth="120" text="Descripción" /> <!-- 00126123 Propiedades de la columna Descripcion, donde se muestra la descripcion de la transaccion realizada -->
           <TableColumn fx:id="ColFecha_RF" minWidth="0.0" prefWidth="115" text="Fecha" /> <!--00126123 Propiedades de la columna Fecha, donde se muestra la fecha de la transaccion realizada -->
