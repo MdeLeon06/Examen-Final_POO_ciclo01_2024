@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>  <!-- 00126123   Especifica la versión y codificación del archivo FXML -->
+ion="1.0" encoding="UTF-8"?>  <!-- 00126123   Especifica la versión y codificación del archivo FXML -->
 <?import javafx.geometry.*?>  <!-- 00126123   Importación de clases de geometría de JavaFX -->
 <?import javafx.scene.control.*?>   <!-- 00126123   Importación de clases de control de JavaFX -->
 <?import javafx.scene.effect.*?>  <!-- 00126123   Importación de clases de efectos de JavaFX -->

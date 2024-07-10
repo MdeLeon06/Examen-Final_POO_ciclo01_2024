@@ -1,50 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?> <!-- 0063923 Importa las clases necesarias para controles de JavaFX -->
+<?import javafx.scene.image.*?> <!-- 0063923 Importa las clases necesarias para imágenes en JavaFX -->
+<?import javafx.scene.layout.*?> <!-- 0063923 Importa las clases necesarias para manejar diseños en JavaFX -->
+<?import javafx.scene.shape.*?> <!-- 0063923 Importa las clases necesarias para formas en JavaFX -->
+<?import javafx.scene.text.*?> <!-- 0063923 Importa las clases necesarias para texto en JavaFX -->
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="449.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="449.0"
+      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.TransaccionController">
    <children>
+      <!-- 0063923 Fondo azul -->
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b76bc" height="542.0" stroke="BLACK" strokeType="INSIDE" width="448.0" />
+      <!-- 0063923 Contenedor blanco -->
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="522.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="429.0" />
-      <Label layoutX="183.0" layoutY="41.0" text="Trasaccion">
+      <!-- 0063923 Título -->
+      <Label layoutX="183.0" layoutY="41.0" text="Transacción">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="44.0" layoutY="100.0" text="Descriccion:">
+      <!-- 0063923 Campo: Descripción -->
+      <Label layoutX="44.0" layoutY="100.0" text="Descripción:">
          <font>
             <Font size="16.0" />
-         </font></Label>
+         </font>
+      </Label>
       <TextArea layoutX="136.0" layoutY="100.0" prefHeight="99.0" prefWidth="240.0" />
+      <!-- 0063923 Campo: Monto -->
       <Label layoutX="78.0" layoutY="226.0" text="Monto:">
          <font>
             <Font size="16.0" />
-         </font></Label>
+         </font>
+      </Label>
       <TextField layoutX="136.0" layoutY="226.0" />
+      <!-- 0063923 Campo: Tarjeta -->
       <Label layoutX="80.0" layoutY="283.0" text="Tarjeta">
          <font>
             <Font size="16.0" />
-         </font></Label>
+         </font>
+      </Label>
       <ComboBox layoutX="135.0" layoutY="283.0" prefWidth="150.0" />
-      <Button layoutX="297.0" layoutY="460.0" mnemonicParsing="false" text="Agregar">
+      <!-- 0063923 Botones: Agregar y Cancelar -->
+      <Button layoutX="245.0" layoutY="460.0" mnemonicParsing="false" text="Agregar">
          <font>
             <Font size="16.0" />
-         </font></Button>
-      <Button layoutX="44.0" layoutY="460.0" mnemonicParsing="false" prefWidth="84.0" text="Cancelar">
+         </font>
+      </Button>
+      <Button layoutX="113.0" layoutY="460.0" mnemonicParsing="false" onAction="#volverAInicio" prefWidth="84.0" text="Cancelar">
          <font>
             <Font size="16.0" />
-         </font></Button>
-      <Button layoutX="144.0" layoutY="460.0" mnemonicParsing="false" text="Agregar Tarjeta">
-         <font>
-            <Font size="16.0" />
-         </font></Button>
+         </font>
+      </Button>
+      <!-- 0063923 Imagen decorativa -->
       <ImageView fitHeight="121.0" fitWidth="225.0" layoutX="44.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
          <image>
+            <!-- 0063923 La URL de la imagen solo es decorativa -->
             <Image url="@../../png-transparent-bank-finance-financial-market-participants-financial-system-investor-deal-seeker-company-text-trademark.png" />
-         </image></ImageView>
+         </image>
+      </ImageView>
    </children>
 </Pane>

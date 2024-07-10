@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.*?>  <!-- 00126123   Importación de clases de diseño de JavaFX -->
 <?import javafx.scene.paint.*?>  <!-- 00126123   Importación de clases de pintura de JavaFX -->
 <?import javafx.scene.text.*?>  <!-- 00126123   Importación de clases de texto de JavaFX -->
-
 <VBox alignment="CENTER" prefHeight="650.0" prefWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.RangoFechasController">  <!-- 00126123  VBOX con las propiedades y el controlador de la pantalla -->
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" /> <!-- 00126123  Define el relleno del VBOX -->
@@ -48,7 +47,13 @@
             <TableColumn fx:id="ColMonto_RF" prefWidth="115" text="Monto" /> <!-- 00126123 Propiedades de la columna Monto, donde se muestra el monto de la transaccion realizada-->
          </columns>
       </TableView>
-      <Label fx:id="MensajeError_RF" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="460.0" textFill="#c71f1f"> <!-- 00126123 Propiedades del label Mensaje de error, en caso de que haya un error en la busqueda de la informacion -->
+     <!-- 00063923 Boton Volver A la pantalla inicio -->
+      <Button mnemonicParsing="false" onAction="#volverAInicio" text="Volver a Inicio">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="MensajeError_RF" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="460.0" textFill="#c71f1f">
          <font>
             <Font size="11.0" /> <!-- 00126123 Tamaño de letra del texto del Label-->
          </font>

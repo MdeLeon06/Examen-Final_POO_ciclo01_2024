@@ -53,3 +53,4 @@
       <Label fx:id="MensajeError_TT" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="460.0" textFill="#ae2323" /> <!-- 00126123 Propiedades del label Mensaje de error, en caso de que haya un error en la busqueda de la informacion -->
    </children>
 </VBox>
+
