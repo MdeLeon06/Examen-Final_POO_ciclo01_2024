@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.ContrasenaAdministradorController">  <!--00160223 Inicio de Layout para crear la interfaz de la pantalla de ContrasenaAdministrador. -->
+   <children> <!--00160223 Inicio de la creacion de los hijos del AnchorPane.-->
+      <Label fx:id="lblVerificarAdmin" layoutX="198.0" layoutY="72.0" text="Verificar Administrador"><!--00160223 Inicio de etiqueta Label para el texto de "Verificar Administrador".-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto.-->
+            <Font size="20.0" /> <!--00160223 Estableciendo el tamaño de fuente de 20px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto.-->
+      </Label><!--00160223 Cierre de la Etiqueta Label para el texto.-->
+      <Label fx:id="lblContrasenaAdmin" layoutX="170.0" layoutY="134.0" text="Contraseña:"> <!--00160223 Inicio de etiqueta Label para el texto de "Contraseña".-->
+         <font><!--00160223 Inicio de la seccion para las caracteristicas del texto.-->
+            <Font size="14.0" /> <!--00160223 Estableciendo el tamaño de fuente de 14px del texto.-->
+         </font><!--00160223 Cierre de la seccion para las caracteristicas del texto.-->
+      </Label><!--00160223 Cierre de la Etiqueta Label para el texto.-->
+      <TextField fx:id="txtFContrasenaAdmin" layoutX="259.0" layoutY="131.0" /> <!--00160223 Espacio para ingresar la contraseña del Administrador.-->
+      <Button fx:id="btnEntrar" layoutX="274.0" layoutY="188.0" mnemonicParsing="false" onAction="#Contrasena" text="Entrar"><!--00160223 Inicio de la etiqueta Button en el cual da ingreso al Administrador.-->
+         <font><!--00160223 Inicio de la seccion para las caracteristicas del texto.-->
+            <Font size="16.0" /> <!--00160223 Estableciendo el tamaño de fuente de 16px del texto.-->
+         </font><!--00160223 Cierre de la seccion para las caracteristicas del texto.-->
+      </Button> <!--00160223 Cierre de la etiqueta Button en el cual da ingreso al Administrador.-->
+   </children> <!--00160223 Cierre de la creacion de los hijos del AnchorPane.-->
+</AnchorPane> <!--00160223 Inicio de Layout para crear la interfaz de la pantalla de ContrasenaAdministrador. -->
