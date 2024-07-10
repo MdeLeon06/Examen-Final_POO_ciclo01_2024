@@ -7,6 +7,14 @@
       <sourceFolder url="file://$MODULE_DIR$/../../Banco_Central_Nlogonia/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../Banco_Central_Nlogonia/src/main/resources" type="java-resource" />
     </content>
+    <content url="file://$MODULE_DIR$/../../Banco_Central_Nlogonia/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../Banco_Central_Nlogonia/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Banco_Central_Nlogonia/src/main/resources" type="java-resource" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../Banco_Central_Nlogonia/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../Banco_Central_Nlogonia/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Banco_Central_Nlogonia/src/main/resources" type="java-resource" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: org.openjfx:javafx-fxml:win:21" level="project" />

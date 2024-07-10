@@ -6,6 +6,8 @@
       <excludeFolder url="file://$MODULE_DIR$/../../Banco_Central_Nlogonia/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../Banco_Central_Nlogonia/build" />
     </content>
+    <content url="file://$MODULE_DIR$/../../Banco_Central_Nlogonia" />
+    <content url="file://$MODULE_DIR$/../../Banco_Central_Nlogonia" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
