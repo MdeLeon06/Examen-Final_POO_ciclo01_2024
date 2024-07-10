@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.PantallaAdministradorController"><!--00160223 Inicio de Layout para crear la interfaz de la pantalla de Generar Reportes. -->
+   <children> <!--00160223 Inicio de la creacion de los hijos del AnchorPane.-->
+      <Label fx:id="lblCreacionReporte" layoutX="178.0" layoutY="29.0" text="Creacion de Reportes"> <!--00160223 Inicio de etiqueta Label para el texto de "Creacion de Reportes".-->
+         <font><!--00160223 Inicio de la seccion para las caracteristicas del texto.-->
+            <Font size="26.0" /> <!--00160223 Estableciendo el tamaño de fuente de 26px del texto.-->
+         </font><!--00160223 Cierre de la seccion para las caracteristicas del texto.-->
+      </Label> <!--00160223 Cierre de etiqueta Label.-->
+      <Label fx:id="lblPreguntaReporte" layoutX="198.0" layoutY="131.0" text="¿Que reporte desea generar?"> <!--00160223 Inicio de etiqueta Label para el texto de "¿Que reporte desea generar?".-->
+         <font><!--00160223 Inicio de la seccion para las caracteristicas del texto.-->
+            <Font size="16.0" /> <!--00160223 Estableciendo el tamaño de fuente de 16px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto.-->
+      </Label><!--00160223 Cierre de etiqueta Label.-->
+      <Button fx:id="btnReporteA" layoutX="52.0" layoutY="188.0" mnemonicParsing="false" text="Reporte A"> <!--00160223 Inicio de la etiqueta Button en el cual genera el Reporte A.-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto.-->
+            <Font size="14.0" /> <!--00160223 Estableciendo el tamaño de fuente de 14px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto.-->
+      </Button> <!--00160223 Cierre del Button.-->
+      <Button fx:id="btnReporteB" layoutX="198.0" layoutY="188.0" mnemonicParsing="false" text="Reporte B"> <!--00160223 Inicio de la etiqueta Button en el cual genera el Reporte B.-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto.-->
+            <Font size="14.0" /> <!--00160223 Estableciendo el tamaño de fuente de 14px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto.-->
+      </Button><!--00160223 Cierre del Button.-->
+      <Button fx:id="btnReporteC" layoutX="333.0" layoutY="188.0" mnemonicParsing="false" text="Reporte C"> <!--00160223 Inicio de la etiqueta Button en el cual genera el Reporte C.-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto.-->
+            <Font size="14.0" /> <!--00160223 Estableciendo el tamaño de fuente de 14px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto.-->
+      </Button><!--00160223 Cierre del Button.-->
+      <Button fx:id="btnReporteD" layoutX="471.0" layoutY="188.0" mnemonicParsing="false" text="Reporte D"> <!--00160223 Inicio de la etiqueta Button en el cual genera el Reporte D.-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto.-->
+            <Font size="14.0" /> <!--00160223 Estableciendo el tamaño de fuente de 14px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto.-->
+      </Button><!--00160223 Cierre del Button.-->
+   </children> <!--00160223 Cierre de la creacion de los hijos del AnchorPane.-->
+</AnchorPane> <!--00160223 Cierre de Layout para crear la interfaz de la pantalla de Generar Reportes. -->
