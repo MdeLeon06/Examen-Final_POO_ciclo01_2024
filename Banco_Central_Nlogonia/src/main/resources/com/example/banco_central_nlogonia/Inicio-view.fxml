@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.InicioController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b76bc" height="542.0" stroke="BLACK" strokeType="INSIDE" width="448.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="522.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="429.0" />
@@ -18,27 +21,27 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button layoutX="60.0" layoutY="159.0" mnemonicParsing="false" text="Trasaccion">
+      <Button layoutX="60.0" layoutY="159.0" mnemonicParsing="false" onAction="#CargarTransaccion" text="Trasaccion">
          <font>
             <Font size="16.0" />
          </font></Button>
-      <Button layoutX="56.0" layoutY="212.0" mnemonicParsing="false" text="Agregar Tarjeta">
+      <Button layoutX="56.0" layoutY="212.0" mnemonicParsing="false" onAction="#CargarAgregarTarjeta" text="Agregar Tarjeta">
          <font>
             <Font size="16.0" />
          </font></Button>
-      <Button layoutX="59.0" layoutY="271.0" mnemonicParsing="false" text="Busquedas de compras realizadas">
+      <Button layoutX="59.0" layoutY="271.0" mnemonicParsing="false" onAction="#CargarRangoFechas" text="Busquedas de compras realizadas">
          <font>
             <Font size="16.0" />
          </font></Button>
-      <Button layoutX="60.0" layoutY="333.0" mnemonicParsing="false" text="Gastos realizados por mes">
+      <Button layoutX="60.0" layoutY="333.0" mnemonicParsing="false" onAction="#CargarTotalMes" text="Gastos realizados por mes">
          <font>
             <Font size="16.0" />
          </font></Button>
-      <Button layoutX="59.0" layoutY="393.0" mnemonicParsing="false" text="Tarjetas Asociadas">
+      <Button layoutX="59.0" layoutY="393.0" mnemonicParsing="false" onAction="#CargarTarjetasAsociadas" text="Tarjetas Asociadas">
          <font>
             <Font size="16.0" />
          </font></Button>
-      <Button layoutX="60.0" layoutY="455.0" mnemonicParsing="false" text="Historial de compras hechas por las tarjetas">
+      <Button layoutX="60.0" layoutY="455.0" mnemonicParsing="false" onAction="#CargarTotalTarjetas" text="Historial de compras hechas por las tarjetas">
          <font>
             <Font size="16.0" />
          </font></Button>
@@ -49,3 +52,4 @@
       </Label>
    </children>
 </Pane>
+

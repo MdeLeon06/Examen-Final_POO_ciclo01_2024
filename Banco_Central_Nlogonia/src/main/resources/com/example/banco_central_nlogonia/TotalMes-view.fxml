@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
@@ -43,6 +44,11 @@
             <TableColumn fx:id="ColTotal_TM" prefWidth="170.79998779296875" text="Total" />
         </columns>
       </TableView>
+      <Button mnemonicParsing="false" onAction="#volverAInicio" text="Volver a Inicio">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
       <Label fx:id="MensajeError_TM" alignment="CENTER" prefHeight="19.0" prefWidth="461.0" textFill="#c91e1e">
          <font>
             <Font size="11.0" />

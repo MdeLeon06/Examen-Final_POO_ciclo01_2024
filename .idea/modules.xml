@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Banco_Central_Nlogonia.iml" filepath="$PROJECT_DIR$/.idea/modules/Banco_Central_Nlogonia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Banco_Central_Nlogonia.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Banco_Central_Nlogonia.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Banco_Central_Nlogonia.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Banco_Central_Nlogonia.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Examen-Final_POO_ciclo01_2024.iml" filepath="$PROJECT_DIR$/.idea/Examen-Final_POO_ciclo01_2024.iml" />
     </modules>
   </component>
