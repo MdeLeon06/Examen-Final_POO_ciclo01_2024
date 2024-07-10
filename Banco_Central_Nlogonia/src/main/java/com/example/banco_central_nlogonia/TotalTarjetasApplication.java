@@ -11,8 +11,8 @@ public class TotalTarjetasApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(NuevoUsuarioApplication.class.getResource("TotalTarjetas-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("   Creacion de nuevo usuario  ");
+        Scene scene = new Scene(fxmlLoader.load(), 500, 600);
+        stage.setTitle("   Gasto Mensual  ");
         stage.setScene(scene);
         stage.show();
     }

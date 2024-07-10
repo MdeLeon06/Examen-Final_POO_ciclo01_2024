@@ -1,17 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>  <!-- 00126123   Especifica la versión y codificación del archivo FXML -->
+<?import javafx.geometry.*?>  <!-- 00126123   Importación de clases de geometría de JavaFX -->
+<?import javafx.scene.control.*?>   <!-- 00126123   Importación de clases de control de JavaFX -->
+<?import javafx.scene.effect.*?>  <!-- 00126123   Importación de clases de efectos de JavaFX -->
+<?import javafx.scene.layout.*?>  <!-- 00126123   Importación de clases de diseño de JavaFX -->
+<?import javafx.scene.paint.*?>  <!-- 00126123   Importación de clases de pintura de JavaFX -->
+<?import javafx.scene.text.*?>  <!-- 00126123   Importación de clases de texto de JavaFX -->
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.banco_central_nlogonia.TotalTarjetasController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.TotalTarjetasController"> <!-- 00126123  VBOX con las propiedades y el controlador de la pantalla -->
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" /> <!-- 00126123  Define el relleno del VBOX -->
+   </padding>
+   <children>
+      <Label alignment="CENTER" prefHeight="53.0" prefWidth="438.0" text="----- Gastos Mensuales -----"> <!-- 00126123 Especifica las medidas del Label, donde se presenta el título de la pantalla -->
+         <font>
+            <Font name="Consolas" size="15.0" /> <!-- 00126123 Tipo y tamaño de la letra del texto en el Label -->
+         </font>
+      </Label>
+      <VBox prefHeight="107.0" prefWidth="460.0"> <!-- 00126123 Dimensiones del VBOX, utilizado para la buena organizacion de los bloques que contiene -->
+         <children>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="460.0" text="Por favor ingrese el mes y el año en que desea realizar la búsqueda" /> <!-- 00126123 Especifica las medidas del Label, en el que se le dan indicaciones al usuario -->
+            <DatePicker fx:id="Fecha_Busqueda_TT" prefHeight="60.0" prefWidth="470.0" /> <!-- 00126123 Dimensiones del datepicker utilizado para seleccionar el mes en el que se realizara la busqueda -->
+         </children>
+      </VBox>
+      <Pane prefHeight="55.0" prefWidth="460.0"> <!-- 00126123 Dimensiones del Pane, utilizado para centrar el botón que contiene -->
+         <children>
+            <Button fx:id="btnBuscar_TT" alignment="CENTER" layoutX="149.0" layoutY="13.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="154.0" text="Buscar" textAlignment="CENTER"> <!-- 00126123 Especifica las propiedades y tamaño del boton de Busqueda de la informacion requerida en el mes seleccionado-->
+               <font>
+                  <Font size="14.0" /> <!-- 00126123 Tamaño de la letra del texto que se encuentra en el boton-->
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="0.5803921818733215" green="0.8392156958580017" blue="0.95686274766922" /> <!-- 00126123 Indica el color del efecto "InnerShadow", el cual da un toque estetico al boton -->
+                     </color></InnerShadow>
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+      <Label prefHeight="38.0" prefWidth="459.0" text="Total gastado:"> <!-- 00126123 Especifica las medidas del Label, en el que se le indica al usuario que en el bloque de abajo puede ver los resultados -->
+         <font>
+            <Font name="System Italic" size="12.800000190734863" /> <!-- 00126123 Tamaño y estilo de la letra del texto del Label-->
+         </font>
+      </Label>
+      <Pane prefHeight="131.0" prefWidth="460.0"> <!-- 00126123 Dimensiones del Pane, utilizado para centrar el Label que contiene  -->
+         <children>
+            <Label fx:id="lbl_MontoporMes_TT" alignment="CENTER" layoutX="-1.0" layoutY="2.0" prefHeight="131.0" prefWidth="460.0">
+               <font>
+                  <Font size="11.0" /> <!-- 00126123 Tamaño de letra del texto del Label-->
+               </font></Label> <!-- 00126123 Propiedades del Label en donde aparece la informacion solicitada -->
+         </children>
+      </Pane>
+      <Label fx:id="MensajeError_TT" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="460.0" textFill="#ae2323" /> <!-- 00126123 Propiedades del label Mensaje de error, en caso de que haya un error en la busqueda de la informacion -->
+   </children>
 </VBox>
 

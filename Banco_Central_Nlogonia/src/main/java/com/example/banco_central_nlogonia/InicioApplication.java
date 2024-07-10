@@ -9,11 +9,14 @@ import java.io.IOException;
 public class InicioApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(AgregarTarjetaApplication.class.getResource("Inicio-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("   Inicio  ");
-        stage.setScene(scene);
-        stage.show();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(AgregarTarjetaApplication.class.getResource("Inicio-view.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 448, 542);
+            stage.setTitle("   Inicio  ");
+            stage.setScene(scene);
+            stage.show();
+
+
     }
 
     public static void main(String[] args) {

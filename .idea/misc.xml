@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+<<<<<<< HEAD
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/Banco_Central_Nlogonia" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="graalvm-jdk-17" project-jdk-type="JavaSDK">
+=======
+
+  <component name="ProjectRootManager">
+
   <component name="ProjectRootManager" version="2" project-jdk-name="22" project-jdk-type="JavaSDK">
+
+>>>>>>> 6ebcb45e543a0fefbad3f0d1c6bb97be5efa2a65
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

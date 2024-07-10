@@ -11,8 +11,8 @@ public class RangoFechasApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(NuevoUsuarioApplication.class.getResource("RangoFechas-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("   Creacion de nuevo usuario  ");
+        Scene scene = new Scene(fxmlLoader.load(), 500, 650);
+        stage.setTitle("   Búsqueda de compras realizadas  ");
         stage.setScene(scene);
         stage.show();
     }
