@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?> <!-- 0063923 Importa las clases necesarias para controles de JavaFX -->
+<?import javafx.scene.layout.*?> <!-- 0063923 Importa las clases necesarias para manejar diseños en JavaFX -->
+<?import javafx.scene.shape.*?> <!-- 0063923 Importa las clases necesarias para formas en JavaFX -->
+<?import javafx.scene.text.*?> <!-- 0063923 Importa las clases necesarias para texto en JavaFX -->
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="449.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.TarjetasAsociadasController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="449.0"
+      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.TarjetasAsociadasController">
    <children>
+      <!-- 0063923 Fondo azul -->
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b76bc" height="542.0" layoutX="1.0" stroke="BLACK" strokeType="INSIDE" width="448.0" />
+      <!-- 0063923 Contenedor blanco -->
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="522.0" layoutX="10.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="429.0" />
-      <Label layoutX="149.0" layoutY="49.0" text="Tarjeta Asociadas">
+      <!-- 0063923 Título de "Tarjetas Asociadas" -->
+      <Label layoutX="149.0" layoutY="49.0" text="Tarjetas Asociadas">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="151.0" layoutY="111.0" text="Tarjetas de Credito">
+      <!-- 0063923 Título de "Tarjetas de Crédito" -->
+      <Label layoutX="151.0" layoutY="111.0" text="Tarjetas de Crédito">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
+      <!-- 0063923 ListView para mostrar las tarjetas de crédito -->
       <ListView layoutX="56.0" layoutY="161.0" prefHeight="122.0" prefWidth="339.0" />
-      <Label layoutX="161.0" layoutY="313.0" text="Tarjetas de debito">
+      <!-- 0063923 Título de "Tarjetas de Débito" -->
+      <Label layoutX="161.0" layoutY="313.0" text="Tarjetas de Débito">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
+      <!-- 0063923 ListView para mostrar las tarjetas de débito -->
       <ListView layoutX="54.0" layoutY="342.0" prefHeight="122.0" prefWidth="345.0" />
+      <!-- 0063923 Botón para volver a la pantalla de inicio -->
       <Button layoutX="159.0" layoutY="489.0" mnemonicParsing="false" onAction="#volverAInicio" text="Volver a Inicio">
          <font>
             <Font size="18.0" />

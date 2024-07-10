@@ -1,51 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?> <!-- 0063923 Importa las clases necesarias para controles de JavaFX -->
+<?import javafx.scene.layout.*?> <!-- 0063923 Importa las clases necesarias para manejar diseños en JavaFX -->
+<?import javafx.scene.shape.*?> <!-- 0063923 Importa las clases necesarias para formas en JavaFX -->
+<?import javafx.scene.text.*?> <!-- 0063923 Importa las clases necesarias para texto en JavaFX -->
 
-
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
-
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.InicioController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="448.0"
+      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.InicioController">
    <children>
+      <!-- 0063923 Fondo azul -->
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b76bc" height="542.0" stroke="BLACK" strokeType="INSIDE" width="448.0" />
+      <!-- 0063923 Contenedor blanco -->
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="522.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="429.0" />
+      <!-- 0063923 Título de bienvenida -->
       <Label layoutX="47.0" layoutY="49.0" text="Bienvenido">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
+      <!-- 0063923 Label para mostrar el nombre de usuario -->
       <Label fx:id="LblNombre_Usuario" layoutX="142.0" layoutY="49.0" prefHeight="27.0" prefWidth="277.0">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Button layoutX="60.0" layoutY="159.0" mnemonicParsing="false" onAction="#CargarTransaccion" text="Trasaccion">
+      <!-- 0063923 Botones para diferentes acciones -->
+      <Button layoutX="60.0" layoutY="159.0" mnemonicParsing="false" onAction="#CargarTransaccion" text="Transacción">
          <font>
             <Font size="16.0" />
-         </font></Button>
+         </font>
+      </Button>
       <Button layoutX="56.0" layoutY="212.0" mnemonicParsing="false" onAction="#CargarAgregarTarjeta" text="Agregar Tarjeta">
          <font>
             <Font size="16.0" />
-         </font></Button>
-      <Button layoutX="59.0" layoutY="271.0" mnemonicParsing="false" onAction="#CargarRangoFechas" text="Busquedas de compras realizadas">
+         </font>
+      </Button>
+      <Button layoutX="59.0" layoutY="271.0" mnemonicParsing="false" onAction="#CargarRangoFechas" text="Búsquedas de compras realizadas">
          <font>
             <Font size="16.0" />
-         </font></Button>
+         </font>
+      </Button>
       <Button layoutX="60.0" layoutY="333.0" mnemonicParsing="false" onAction="#CargarTotalMes" text="Gastos realizados por mes">
          <font>
             <Font size="16.0" />
-         </font></Button>
+         </font>
+      </Button>
       <Button layoutX="59.0" layoutY="393.0" mnemonicParsing="false" onAction="#CargarTarjetasAsociadas" text="Tarjetas Asociadas">
          <font>
             <Font size="16.0" />
-         </font></Button>
+         </font>
+      </Button>
       <Button layoutX="60.0" layoutY="455.0" mnemonicParsing="false" onAction="#CargarTotalTarjetas" text="Historial de compras hechas por las tarjetas">
          <font>
             <Font size="16.0" />
-         </font></Button>
-      <Label layoutX="47.0" layoutY="76.0" text="Que Desea Realizar.">
+         </font>
+      </Button>
+      <!-- 0063923 Mensaje adicional -->
+      <Label layoutX="47.0" layoutY="76.0" text="¿Qué desea realizar?">
          <font>
             <Font size="18.0" />
          </font>

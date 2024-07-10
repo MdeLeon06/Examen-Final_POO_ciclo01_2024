@@ -1,48 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?> <!-- 0063923 Importa las clases necesarias para controles de JavaFX -->
+<?import javafx.scene.image.*?> <!-- 0063923 Importa las clases necesarias para imágenes en JavaFX -->
+<?import javafx.scene.layout.*?> <!-- 0063923 Importa las clases necesarias para manejar diseños en JavaFX -->
+<?import javafx.scene.shape.*?> <!-- 0063923 Importa las clases necesarias para formas en JavaFX -->
+<?import javafx.scene.text.*?> <!-- 0063923 Importa las clases necesarias para texto en JavaFX -->
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="449.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.AgregarTarjetaController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="449.0"
+      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.AgregarTarjetaController">
    <children>
+      <!-- 0063923 Fondo azul -->
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b76bc" height="542.0" stroke="BLACK" strokeType="INSIDE" width="449.0" />
+      <!-- 0063923 Contenedor blanco -->
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="522.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="429.0" />
-      <Label contentDisplay="CENTER" layoutX="19.0" layoutY="-8.0" prefHeight="108.0" prefWidth="411.0" text="Bienvenido al sistema de agregacion de tarjetas. Ingrese los datos necesarios" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+      <!-- 0063923 Título -->
+      <Label contentDisplay="CENTER" layoutX="19.0" layoutY="-8.0" prefHeight="108.0" prefWidth="411.0"
+             text="Bienvenido al sistema de agregación de tarjetas. Ingrese los datos necesarios" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="true">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="36.0" layoutY="115.0" text="Numero de tarjeta:">
+      <!-- 0063923 Campo: Número de tarjeta -->
+      <Label layoutX="36.0" layoutY="115.0" text="Número de tarjeta:">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
       <TextField layoutX="170.0" layoutY="115.0" prefHeight="25.0" prefWidth="204.0" />
+      <!-- 0063923 Campo: Tipo de tarjeta -->
       <Label layoutX="37.0" layoutY="154.0" text="Tipo de tarjeta">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
       <ComboBox layoutX="150.0" layoutY="154.0" prefWidth="150.0" />
+      <!-- 0063923 Campo: Facilitador -->
       <Label layoutX="37.0" layoutY="202.0" text="Facilitador">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
       <ComboBox layoutX="122.0" layoutY="202.0" prefWidth="150.0" />
+      <!-- 0063923 Campo: Fecha de expiración -->
       <DatePicker layoutX="184.0" layoutY="259.0" prefHeight="25.0" prefWidth="204.0" />
-      <Label layoutX="33.0" layoutY="259.0" text="Fecha de expiracion">
+      <Label layoutX="33.0" layoutY="259.0" text="Fecha de expiración">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
+      <!-- 0063923 Botones: Cancelar y Agregar -->
       <Button layoutX="63.0" layoutY="451.0" mnemonicParsing="false" onAction="#volverAInicio" prefHeight="36.0" prefWidth="80.0" text="Cancelar" />
       <Button layoutX="286.0" layoutY="451.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="103.0" text="Agregar" />
+      <!-- 0063923 Imagen decorativa -->
       <ImageView fitHeight="245.0" fitWidth="335.0" layoutX="57.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
          <image>
+            <!-- 0063923 La URL de la imagen solo es decorativa -->
             <Image url="@../../esp-grandes-superficies-tarjetas-credito-640x280-16032014.jpg" />
          </image>
       </ImageView>
