@@ -1,16 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.banco_central_nlogonia.LoginController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.LoginController"> <!--00160223 Inicio de Layout para crear la interfaz de la pantalla de login. -->
+   <children> <!--00160223 Inicio de la creacion de los hijos del AnchorPane.-->
+      <Label fx:id="lblBienvenida" layoutX="231.0" layoutY="14.0" text="Bienvenidos"> <!--00160223 Inicio de etiqueta Label para el texto de "Bienvenidos".-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto "Bienvenidos".-->
+            <Font size="26.0" /> <!--00160223 Estableciendo el tamaño de fuente de 26px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto "Bienvenidos".-->
+      </Label> <!--00160223 Cierre de la Etiqueta Label para el texto "Bienvenidos".-->
+      <Label fx:id="lblUsuario" layoutX="52.0" layoutY="101.0" text="Usuario:"> <!--00160223 Inicio de etiqueta Label para el texto de "Usuario".-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto "Usuario".-->
+            <Font size="16.0" /> <!--00160223 Estableciendo el tamaño de fuente de 16px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto "Usuario".-->
+      </Label><!--00160223 Cierre de la Etiqueta Label para el texto "Usuario".-->
+      <TextField fx:id="txtFUsuario" layoutX="143.0" layoutY="101.0" /> <!--00160223 Espacio para ingresar el dato del Usuario ya registrado.-->
+      <Label fx:id="lblContrasena" layoutX="52.0" layoutY="139.0" text="Contraseña:"> <!--00160223 Inicio de etiqueta Label para el texto de "Contraseña".-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto "Contraseña".-->
+            <Font size="16.0" /> <!--00160223 Estableciendo el tamaño de fuente de 16px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto "Contraseña".-->
+      </Label> <!--00160223 Cierre de la Etiqueta Label para el texto "Contraseña".-->
+      <TextField fx:id="txtFContrasena" layoutX="143.0" layoutY="139.0" /> <!--00160223 Espacio para ingresar la Contraseña ya registrada del usuario.-->
+      <Button fx:id="btnIngresar" layoutX="126.0" layoutY="183.0" mnemonicParsing="false" onAction="#IngresarDatosLogin" text="Ingresar"> <!--00160223 Inicio de la etiqueta Button en el cual da ingreso al usuario ya registrado.-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto del botón "Ingresar".-->
+            <Font size="16.0" /> <!--00160223 Estableciendo el tamaño de fuente de 16px del texto del botón.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto del botón "Ingresar".-->
+      </Button> <!--00160223 Cierre de la etiqueta Button en el cual da ingreso al usuario ya registrado.-->
+      <Label fx:id="lblCrearUsuario" layoutX="394.0" layoutY="89.0" text="Crear nuevo usuario:"> //00160223 Inicio de etiqueta Label para el texto de "Crear nuevo usuario".-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto "Crear nuevo usuario".-->
+            <Font size="16.0" /> <!--00160223 Estableciendo el tamaño de fuente de 16px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto "Crear nuevo usuario".-->
+      </Label> <!--00160223 Cierre de la Etiqueta Label para el texto "Crear nuevo usuario".-->
+      <Button fx:id="btbNuevoUsuario" layoutX="412.0" layoutY="124.0" mnemonicParsing="false" onAction="#IngresoNuevoUsuario" text="Nuevo Usuario"> <!--00160223 Inicio de la etiqueta Button en el cual lleva al usuario nuevo a registrar sus datos.-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto del botón "Nuevo Usuario".-->
+            <Font size="14.0" /> <!--00160223 Estableciendo el tamaño de fuente de 14px del botón.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto del botón "Nuevo Usuario".-->
+      </Button> <!--00160223 Cierre de la etiqueta Button en el cual lleva al usuario nuevo a registrar sus datos.-->
+      <Label fx:id="lblError" layoutX="166.0" layoutY="336.0" prefHeight="20.0" prefWidth="284.0"> <!--00160223 Inicio de etiqueta Label para estableces un texto de Error, en cual solamente aparecera si el usuario no ha llenado los espacios solicitados.-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto de error.-->
+            <Font size="14.0" /> <!--00160223 Estableciendo el tamaño de fuente de 14px del texto. -->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto de error.-->
+      </Label> <!--00160223 Cierre de la Etiqueta Label para el texto error.-->
+      <Label fx:id="lblInformacionUsuario" layoutX="105.0" layoutY="52.0" text="Si ya estás registrado, rellena los datos, si no, crea un Nuevo Usuario"> <!--00160223 Inicio de etiqueta Label para dar Información para que el usuario pueda realizar las acciones necesarias.-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto para informacion del usuario.-->
+            <Font size="13.0" /> <!--00160223 Estableciendo el tamaño de fuente de 13px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto de informacio del usuario.-->
+      </Label> <!--00160223 Cierre de la Etiqueta Label para el texto de informacion del usuario.-->
+      <Line fx:id="lineLineaDivisora" endX="-100.0" endY="133.0" layoutX="425.0" layoutY="91.0" startX="-100.0" /> <!--00160223 Linea que divide al Usuario registrado y el Nuevo Usuario-->
+      <Label fx:id="lblInfomacionAdministrador" layoutX="144.0" layoutY="259.0" text="O si eres administrador. Haz click en el botón de abajo."> <!--00160223 Inicio de etiqueta Label para que el Administrador pueda ir al area de gestion de Usuarios.-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto para dar informacion al administrador a donde dirigirse.-->
+            <Font size="13.0" /> <!--00160223 Estableciendo el tamaño de fuente de 13px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto de informacion para el usuario.-->
+      </Label> <!--00160223 Cierre de la Etiqueta Label para el texto de informacion para el usuario.-->
+      <Button fx:id="btnAdministrador" layoutX="240.0" layoutY="284.0" mnemonicParsing="false" text="Administrador"> <!--00160223 Inicio de la etiqueta Button en el cual lleva al Administrador a poder revisar reportes y consultas.-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto del botón "Administrador".-->
+            <Font size="16.0" /> <!--00160223 Estableciendo el tamaño de fuente de 16px del botón.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto para el administrador.-->
+      </Button> <!--00160223 Cierre de la etiqueta Button en el cual lleva al Administrador a poder revisar reportes y consultas.-->
+   </children> <!--00160223 Cierre de la creacion de los hijos del AnchorPane.-->
+</AnchorPane><!--00160223 Cierre del Layout para crear la interfaz de la pantalla de login.-->

@@ -1,16 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.banco_central_nlogonia.NuevoUsuarioController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banco_central_nlogonia.NuevoUsuarioController"> <!--00160223 Inicio de Layout para crear la interfaz de la pantalla de NuevoUsuario.-->
+   <children> <!--00160223 Inicio de la creacion de los hijos del AnchorPane.-->
+      <Label fx:id="lblCreacionUsuario" layoutX="159.0" layoutY="33.0" text="Creación de nuevo usuario"> <!--00160223 Inicio de etiqueta Label para el texto de "Creacion de nuevo Usuario".-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto "Creacion de nuevo usario".-->
+            <Font size="24.0" /> <!--00160223 Estableciendo el tamaño de fuente de 24px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto "Creacion de nuevo usuario".-->
+      </Label> <!--00160223 Cierre de etiqueta Label para el texto de "Bienvenidos".-->
+      <Label fx:id="lblNombreCompleto" layoutX="48.0" layoutY="103.0" text="Nombre Completo:"> <!--00160223 Inicio de etiqueta Label para el texto de "Nombre Completo".-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto "Nombre Completo".-->
+            <Font size="16.0" /> <!--00160223 Estableciendo el tamaño de fuente de 16px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto "NOmbre Completo".-->
+      </Label> <!--00160223 Cierre de etiqueta Label para el texto de "Nombre Completo".-->
+      <Label fx:id="lblTelefono" layoutX="48.0" layoutY="137.0" text="Teléfono:"> <!--00160223 Inicio de etiqueta Label para el texto de "Telefono".-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto "Telefono".-->
+            <Font size="16.0" /> <!--00160223 Estableciendo el tamaño de fuente de 16px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto "Telefono".-->
+      </Label> <!--00160223 Cierre de etiqueta Label para el texto de "Telefono".-->
+      <Label fx:id="lblDireccion" layoutX="48.0" layoutY="169.0" text="Dirección:"> <!--00160223 Inicio de etiqueta Label para el texto de "Direccion".-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto "Direccion".-->
+            <Font size="16.0" /> <!--00160223 Estableciendo el tamaño de fuente de 16px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto "Direccion".-->
+      </Label> <!--00160223 Cierre de etiqueta Label para el texto de "Direccion".-->
+      <Label fx:id="lblUsuarioN" layoutX="48.0" layoutY="207.0" text="Usuario:"> <!--00160223 Inicio de etiqueta Label para el texto de "Usuario".-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto "Usuario".-->
+            <Font size="16.0" /> <!--00160223 Estableciendo el tamaño de fuente de 16px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto "Usuario".-->
+      </Label> <!--00160223 Cierre de etiqueta Label para el texto de "Usuario".-->
+      <Label fx:id="lblContrasenaN" layoutX="52.0" layoutY="240.0" text="Contraseña:"> <!--00160223 Inicio de etiqueta Label para el texto de "Contraseña".-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto "Contraseña".-->
+            <Font size="16.0" /> <!--00160223 Estableciendo el tamaño de fuente de 16px del texto.-->
+         </font> <!--00160223 Cierre de la seccion para las caracteristicas del texto "Contraseña".-->
+      </Label> <!--00160223 Cierre de etiqueta Label para el texto de "Contraseña".-->
+      <Button fx:id="btnAgregarUsuario" layoutX="273.0" layoutY="292.0" mnemonicParsing="false" onAction="#DatosNuevos" text="Agregar"> <!--00160223 Inicio de la etiqueta Button "Agregar" en el cual agrega la informacion del usuario nuevo.-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del botón "Agregar".-->
+            <Font size="16.0" /> <!--00160223 Estableciendo el tamaño de fuente de 16px del texto.-->
+         </font> <!--00160223 Inicio de la seccion para las caracteristicas del botón "Agregar".-->
+      </Button> <!--00160223 Cierre de la etiqueta Button "Agregar".-->
+      <Button fx:id="btnSiguiente" layoutX="504.0" layoutY="352.0" mnemonicParsing="false" onAction="#PantallaTarjeta" text="Siguiente"> <!--00160223 Inicio de la etiqueta Button "Siguiente, el cual lleva a la siguiente pantalla, para llenar la informacion de la tarjeta".-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del botón "Siguiente".-->
+            <Font size="16.0" /> <!--00160223 Estableciendo el tamaño de fuente de 16px del texto.-->
+         </font> <!--00160223 Inicio de la seccion para las caracteristicas del botón "Siguiente".-->
+      </Button> <!--00160223 Cierre de la etiqueta Button "Siguiente".-->
+      <TextField fx:id="txtFNombreCompleto" layoutX="199.0" layoutY="103.0" prefHeight="25.0" prefWidth="363.0" /> <!--00160223 Espacio para ingresar el nomobre completo del usuario nuevo.-->
+      <TextField fx:id="txtFTelefono" layoutX="124.0" layoutY="137.0" /> <!--00160223 Espacio para ingresar el telefono del Usuario Nuevo.-->
+      <TextField fx:id="txtFDireccion" layoutX="136.0" layoutY="169.0" prefHeight="25.0" prefWidth="427.0" /> <!--00160223 Espacio para ingresar la direccion del Usuario Nuevo.-->
+      <TextField fx:id="txtFUsuarioN" layoutX="116.0" layoutY="207.0" /> <!--00160223 Espacio para ingresar el Usuario del Usuario Nuevo.-->
+      <TextField fx:id="txtFContrasenaN" layoutX="151.0" layoutY="240.0" /> <!--00160223 Espacio para ingresar la contraseña del Usuario Nuevo.-->
+      <Label fx:id="lblError" layoutX="52.0" layoutY="344.0" prefHeight="17.0" prefWidth="427.0"> <!--00160223 Inico de etiqueta Label para el texto de error, en el cual aparece si el usuario no completa los datos solicitados.-->
+         <font> <!--00160223 Inicio de la seccion para las caracteristicas del texto de error.-->
+            <Font size="14.0" /> <!--00160223 Estableciendo el tamaño de fuente de 14px del texto.-->
+         </font> <!--00160223 Inicio de la seccion para las caracteristicas del texto de error.-->
+      </Label> <!--00160223 Cierre de etiqueta Label para el texto de error.-->
+   </children> <!--00160223 Cierre de la creacion de los hijos del AnchorPane.-->
+</AnchorPane> <!--00160223 Cierre de Layout para crear la interfaz de la pantalla de login.-->
