@@ -14,7 +14,7 @@ public class FacilitadorDAO implements IFacilitadorDAO {
     public int BuscarFacilitador(String nombre) {
         this.con = InstanciaConexion.conectarDB();
         int resultado = 0;
-        String sql = "SELECT Id_Facilitador FROM facilitador WHERE nombre = ?";
+        String sql = "SELECT Id_Facilitador FROM facilitador WHERE Facilitador = ?";
         try{
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, nombre);

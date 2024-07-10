@@ -7,4 +7,5 @@ public interface ITarjetaDAO {
     List<Tarjeta> obtenerTarjetas();
     void guardarTarjeta(Tarjeta tarjeta);
     void eliminarTarjeta(Tarjeta tarjeta);
+    List<Tarjeta> obtenerTarjetaPorCliente(int id);
 }

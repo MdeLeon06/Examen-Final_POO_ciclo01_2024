@@ -7,7 +7,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClienteDAO implements IClienteDAO {
+public class    ClienteDAO implements IClienteDAO {
     private Connection con;
     private ConexionDB instanciaConexion = new ConexionDB();
 

@@ -1,6 +1,6 @@
-package Banco.Entidad.Transaccion;
+package com.example.banco_central_nlogonia.Banco.Entidad.Transaccion;
 
-import Banco.Entidad.Tarjeta.Tarjeta;
+import com.example.banco_central_nlogonia.Banco.Entidad.Tarjeta.Tarjeta;
 
 public class Transaccion {
     private int codigo;

@@ -77,6 +77,28 @@ public class TarjetaDAO implements ITarjetaDAO{
         }
     }
 
+    @Override
+    public List<Tarjeta> obtenerTarjetaPorCliente(int id) {
+        con = InstanciaConexion.conectarDB();
+        List<Tarjeta> Tarjetas = new ArrayList<Tarjeta>();
+        String sql = "select * from Tarjeta as t inner join Clientes as c on t.Id_cliente=c.Id_cliente where Id_cliente=? ";
+        try{
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                Tarjeta tarjeta = new Tarjeta();
+                tarjeta.setTarjeta(rs.getString("Cuenta"));
+                tarjeta.setTipoTarjeta(rs.getString("Tipo_Tarjeta"));
+                Tarjetas.add(tarjeta);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return null;
+    }
+
     public static void main (String[] args) {
         TarjetaDAO TarjetaDAO = new TarjetaDAO();
         List<Tarjeta> tarjetas = TarjetaDAO.obtenerTarjetas();
@@ -84,4 +106,6 @@ public class TarjetaDAO implements ITarjetaDAO{
             System.out.println(tarjeta.toString());
         }
     }
+
+
 }
