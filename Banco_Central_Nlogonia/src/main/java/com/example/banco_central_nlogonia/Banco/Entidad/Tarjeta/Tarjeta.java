@@ -1,6 +1,6 @@
-package Banco.Entidad.Tarjeta;
+package com.example.banco_central_nlogonia.Banco.Entidad.Tarjeta;
 
-import Banco.Entidad.Cliente.Cliente;
+import com.example.banco_central_nlogonia.Banco.Entidad.Cliente.Cliente;
 
 public class Tarjeta {
     private int id;

@@ -1,6 +1,6 @@
-package Banco.Entidad.Transaccion;
+package com.example.banco_central_nlogonia.Banco.Entidad.Transaccion;
 
-import Banco.Entidad.Tarjeta.Tarjeta;
+import com.example.banco_central_nlogonia.Banco.Entidad.Tarjeta.Tarjeta;
 
 public class Transaccion {
     private int codigo;
@@ -8,8 +8,9 @@ public class Transaccion {
     private float Monto;
     private String descripcion;
     private String fecha;
-    private Tarjeta tarjeta;
-    public Transaccion(int codigo, float monto, String descripcion, Tarjeta tarjeta, String fecha) {
+    private String tarjeta;
+    private int cantidad;
+    public Transaccion(int codigo, float monto, String descripcion, String tarjeta, String fecha) {
         this.codigo = codigo;
         this.Monto = monto;
         this.descripcion = descripcion;
@@ -38,10 +39,10 @@ public class Transaccion {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    public Tarjeta getTarjeta() {
+    public String getTarjeta() {
         return tarjeta;
     }
-    public void setTarjeta(Tarjeta tarjeta) {
+    public void setTarjeta(String tarjeta) {
         this.tarjeta = tarjeta;
     }
     public String getFecha() {
@@ -50,12 +51,18 @@ public class Transaccion {
     public void setFecha(String fecha) {
         this.fecha = fecha;
     }
-
     public int getIdTarjeta() {
         return IdTarjeta;
     }
-
     public void setIdTarjeta(int idTarjeta) {
         IdTarjeta = idTarjeta;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
     }
 }

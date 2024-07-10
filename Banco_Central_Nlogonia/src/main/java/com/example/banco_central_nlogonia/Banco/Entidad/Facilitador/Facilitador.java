@@ -1,4 +1,4 @@
-package Banco.Entidad.Facilitador;
+package com.example.banco_central_nlogonia.Banco.Entidad.Facilitador;
 
 public class Facilitador {
     private int IdFacilitador;

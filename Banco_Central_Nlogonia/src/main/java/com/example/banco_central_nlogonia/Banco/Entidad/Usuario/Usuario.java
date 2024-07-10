@@ -1,4 +1,4 @@
-package Banco.Entidad.Usuario;
+package com.example.banco_central_nlogonia.Banco.Entidad.Usuario;
 
 public class Usuario {
     private int Id;
