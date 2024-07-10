@@ -72,18 +72,19 @@ public class UsuarioDAO implements IUsuarioDAO{
         boolean resultado = false; // 00012523 Variable para indicar si existe o no la cuenta
         String sql = "select * from Usuarios where usuario = ? and Clave = ?"; // 00012523 Codigo para realizr la consulta con la base de datos
         try{ // 00012523 Intento de ejecucion de la consulta
-            PreparedStatement ps = con.prepareStatement(sql); // 00012523  Preparacion de la consulta
+            PreparedStatement ps = this.con.prepareStatement(sql); // 00012523  Preparacion de la consulta
             ps.setString(1, Usuario); // 00012523 Insertando el valor al parametro 1
             ps.setString(2, Clave); // 00012523 Insertando el valor al parametro 2
             ResultSet rs = ps.executeQuery(); // 00012523 Ejecutando y obteniendo datos
             while(rs.next()){ // 00012523 verificacion de existencia de la cuenta
-                    resultado = true; // 00012523 La cuenta si existe
+                resultado = true; // 00012523 La cuenta si existe
+                System.out.println("Inicio Exitoso");
             }
         } catch (SQLException e) { // 00012523 Clausula de excepcion en el caso que la consulta falle
             throw new RuntimeException(e); // 0001252 Mensaje de error
         } finally { // 00012523 Ejecucion de la parte final de la funcion
             try{ // 00012523 Intento de cierre de la conexion
-                con.close(); // 00012523 Cierre de la conexion con la base de datos
+                this.con.close(); // 00012523 Cierre de la conexion con la base de datos
             } catch (SQLException e) { // 00012523 Clausula de excepcion en el caso que la consulta falle
                 throw new RuntimeException(e); // 00012523 Mensaje de error
             }

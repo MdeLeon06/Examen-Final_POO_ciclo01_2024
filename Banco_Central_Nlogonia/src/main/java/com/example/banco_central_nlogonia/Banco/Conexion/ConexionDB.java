@@ -14,6 +14,7 @@ public class ConexionDB {
         } catch (SQLException e) { // 00012523 Si la conexion no es posible
             System.out.println("Err conexion: " + e.getMessage()); //00012523 Mensaje de Err si la conexion falla
         }
+        System.out.println("Conecta");
         return this.con; //00012523 Retorna la conexion
     }
 
